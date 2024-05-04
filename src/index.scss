@@ -1,0 +1,19 @@
+//With Vite SASS comes out of the box just npm i sass and you ready to go. 
+// $primary-color: steel-blue;
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    // background-color: $primary-color;
+    font-family: "Lato", sans-serif;
+    overflow: hidden;
+}
