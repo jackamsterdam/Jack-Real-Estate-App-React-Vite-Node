@@ -1,10 +1,11 @@
 import "./layout.scss"
 import Jack from "./Jack"
+import NavBar from "./components/navbar/NavBar"
 
 function App() {
   return (
     <div className="layout">
-      Hello
+      <NavBar />
     {/* <Jack/> */}
     </div>
   )

@@ -28,3 +28,5 @@ Flexibility: By allowing dynamic content insertion, mixins become more flexible.
 Separation of Concerns: Mixins with @content help maintain a clear separation of concerns. Mixins focus on defining reusable styles, while the content provided via @content focuses on specific variations or additions to those styles.
 Modularity: With @content, mixins become more modular. They can be used in various contexts with different content, enabling a more modular architecture in your stylesheet.
 Easier Maintenance: By abstracting common styles into mixins and using @content to inject dynamic content, your code becomes easier to maintain. Changes to common styles can be made in one place (the mixin definition), and those changes will be reflected wherever the mixin is used.
+
+a - anchor tags display none for sm screen but when you need them do display: initial. 
