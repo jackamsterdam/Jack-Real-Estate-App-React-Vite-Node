@@ -1,24 +1,27 @@
-//@mixin phone
-@mixin sm{
-    // @media(max-width:738px) {
-    @media(max-width:800px) {
-        @content; //inside the actual class you will write the content. but would @include any other classes you puthere plus you can give it dynamic content
-    }
-
-}
-//@mixin desktop
-@mixin md {
-    // @media(max-width:1024px) {
-    @media(max-width:900px) {
-        @content;
-    }
-}
-
 //@mixin large-screen
 @mixin lg {
-    // @media(max-width:1366px) {
-    @media(max-width:1000px) {
+    @media(max-width:1366px) { //LM
+    // @media(max-width:1000px) {
         @content;
     }
 }
+
+//@mixin desktop
+@mixin md {
+    @media(max-width:1024px) { //LM
+    // @media(max-width:900px) {
+        @content;
+    }
+}
+
+//@mixin phone
+@mixin sm{
+    @media(max-width:738px) { //LM
+    // @media(max-width:800px) {
+        @content; //inside the actual class you will write the content. but would @include any other classes you puthere plus you can give it dynamic content
+    }
+}
+
+
+
 

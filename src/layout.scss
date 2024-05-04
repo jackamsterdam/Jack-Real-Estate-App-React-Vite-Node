@@ -1,7 +1,7 @@
 @import "./responsive.scss";
 
 .layout {
-    background-color: rebeccapurple;
+   //  background-color: rebeccapurple;
     height: 100vh;
     // max-width: 1366px; //1366 on 15 inch screen but my computer is 14 inch
     max-width: 900px; //if using bigger computer change to above!
@@ -13,17 +13,23 @@
 //write includes in order - biggest screen is above then lg then md then sm
 // if mobile first design reverse order of these 
    @include lg {
-    background-color: coral;
+    background-color: rgb(247, 210, 196);
+    //  max-width: 1280px;  //LM
+    max-width: 1000px; //becasue my screen is small but use the above
    }
 
 
    @include md {
-    background-color: cornflowerblue;
+    background-color: rgb(186, 203, 234);
+    max-width: 768px; //LM
+  
    }
 
 
    @include sm {
-    background-color: red;
+    background-color: rgb(239, 200, 200);
+    max-width: 640px; //LM
+   
    }
 }
   
