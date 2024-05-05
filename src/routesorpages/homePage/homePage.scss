@@ -1,3 +1,5 @@
+@import '../../responsive.scss';
+
 .homePage {
     display: flex;
     height: 100%;
@@ -14,23 +16,43 @@
             gap: 50px;
             height: 100%;
 
+            @include md {
+                padding: 0;
+            }
+
+            @include sm {
+                justify-content: flex-start;
+            }
+
             .title {
-                // font-size: 64px; //LM
-                font-size: 54px; 
+                font-size: 64px;  //LM
+                // font-size: 54px; 
+
+                @include lg {
+                    font-size: 48px;
+                }
             }
 
             .boxes {
                 display: flex;
                 justify-content: space-between;
 
+                @include sm {
+                   display: none;
+                }
+
                 h1 {
-                    // font-size: 36px; //LM
-                    font-size: 30px;
+                    font-size: 36px; //LM
+                    // font-size: 30px;
+
+                    @include lg {
+                        font-size: 32px;
+                    }
                 }
 
                 h2 {
-                    // font-size: 20px;  //LM
-                    font-size: 15px;
+                    font-size: 20px;  //LM
+                    // font-size: 15px;
                     font-weight: 300;
                 }
             }
@@ -44,11 +66,21 @@
         display: flex;
         align-items: center;
 
+        @include md {
+            display: none;
+        }
+
         img {
             width: 115%; // we want the photo to overflow a little
             position: absolute;
             right: 0;
+
+            @include lg {
+                width: 105%;
+            }
         }
+
+      
     }
 
 }

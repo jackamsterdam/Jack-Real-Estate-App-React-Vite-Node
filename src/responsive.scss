@@ -1,7 +1,7 @@
 //@mixin large-screen
 @mixin lg {
-    // @media(max-width:1366px) { //LM
-    @media(max-width:1200px) {   //USE THE ABOVE!!!
+    @media(max-width:1366px) { //LM
+    // @media(max-width:1200px) {   //USE THE ABOVE!!!
         @content;
     }
 }
